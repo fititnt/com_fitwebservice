@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+    type="component" 
+    version="1.7.0" 
+    method="upgrade"
+    >
+    <name>COM_FITIWEBSERVICE</name>
+    <creationDate>2011-09-29</creationDate>
+    <author>Emerson Rocha Luiz</author>
+    <authorEmail>emerson@webdesign.eng.br</authorEmail>
+    <authorUrl>http://fititnt.org</authorUrl>
+    <copyright>Copyright (C) 2005 - 2011 Webdesign Assessoria em Tecnologia da Informacao.</copyright>
+    <license>GNU General Public License version 3. See license.txt</license>
+    <version>0.1</version>
+    <description>COM_FITIWEBSERVICE_DESCRIPTION</description>
+    
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+    
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>fitiwebservice.php</filename>
+        <filename>controller.php</filename>
+        <folder>views</folder>
+        <folder>models</folder>
+        <folder>language</folder>
+    </files>
+
+    <administration>
+        <menu>COM_FITIWEBSERVICE_MENU</menu>
+        <submenu>
+            <menu view="fitiwebservices">COM_FITIWEBSERVICE_SUBMENU_MESSAGES</menu>
+            <menu link="option=com_categories&amp;view=categories&amp;extension=com_fitiwebservice">COM_FITIWEBSERVICE_SUBMENU_CATEGORIES</menu>
+        </submenu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>fitiwebservice.php</filename>
+            <filename>controller.php</filename>
+            <filename>config.xml</filename>
+            <filename>license.txt</filename>
+            <filename>readme.txt</filename>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>models</folder>
+            <folder>views</folder>
+            <folder>language</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+        </files>
+    </administration>
+</extension>
+

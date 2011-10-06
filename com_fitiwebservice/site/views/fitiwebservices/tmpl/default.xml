@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout 
+        title="COM_FITIWEBSERVICE_FITIWEBSERVICES_MENU" 
+        option="COM_FITIWEBSERVICE_FITIWEBSERVICES_OPTION"
+    >
+        <help 
+            key = "COM_FITIWEBSERVICE_FITIWEBSERVICES_HELP"
+        />		
+        <message>
+                <![CDATA[COM_FITIWEBSERVICE_FITIWEBSERVICES_VIEW_DESC]]>
+        </message>
+    </layout>
+</metadata>
